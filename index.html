@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Cadastro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" alt="Logotipo do site" href="imagens/logo.icon" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9d231ef7a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Cadastro</title>
+</head>
+<body class="fundo">
+    <header>
+        <div class="logo">
+            <img src="imagens/netflix-logo.png" alt="Logotipo da Netflix">
+        </div>
+    </header>
+    <section>
+        <div class="conteudo-form">
+            <h2>Experimente por 7 dias grátis</h2>
+            <form method="POST" action="">
+                <div class="input-form">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                </div>
+                <div class="input-form">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" name="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="input-form">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" name="telefone" placeholder="Seu DDD + telefone" required>
+                </div>
+                <div class="input-form">
+                    <i class="fas fa-cog"></i>
+                    <select name="plano" required>
+                        <option value="0">Deseja qual plano?</option>
+                        <option class="opções" value="0">Básico - 25,90/mês</option>
+                        <option class="opções" value="0">Padrão - 39,90/mês</option>
+                        <option class="opções" value="0">Premium - 55,90/mês</option>
+                    </select>
+                </div>
+                <label for="">
+                    Escolha um endereço para o seu perfil
+                </label>
+                <div class="input-form input-grupo">
+                    <input type="text" name="usarname" placeholder="User" required>
+                    <span class="complemento">.netflix.com</span>
+                </div>
+                <p><i class="far fa-check-square"></i>Li e aceito os <a href="#">termos de uso</a></p>
+                <div class="input-form cupom">
+                    <i class="fas fa-ticket-alt"></i>
+                    <input type="text" name="cupom" placeholder="Tem cupom? Insira aqui!">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <button name="enviar">
+                    Criar conta
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
